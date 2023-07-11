@@ -63,8 +63,6 @@ function getDayBusisness(janFirstDayNumber, yearDayNumber, hourNumber){
 // Challenge
 // Replace the yearDayNumber and hourNumber parameters with a Date() variable.
 
-let fechaActual = new Date();
-
 
 function getDayBusisness2(){
     let fechaActual = new Date();
@@ -80,4 +78,3 @@ function getDayBusisness2(){
     }  
 }
 
-console.log(getDayBusisness2());
