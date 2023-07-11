@@ -22,7 +22,7 @@ function busisnessHours (dayNumber, hourNumber){
 }
 
 
-console.log(busisnessHours(4, 18));
+
 
 // Part 2
 // Now, create the function getDayNumber.
@@ -37,25 +37,9 @@ console.log(busisnessHours(4, 18));
 
 // Hint: use the remainder operator (%), dividing your yearDayNumber by 7.
 
-function getDayNumber(janFirstDayNumber, yearDayNumber){
-    let res = yearDayNumber % 7;
-    let op1 = res-1;
-    let op2 = op1 + janFirstDayNumber;
 
-    if(op2<=6){
-        return op2;
-    }
-    else {
-        let op3 = op2 % 7;
-        return op3;
-    }
-}
-
-console.log(getDayNumber(6,29));
-
-//Versión resuelta en clase
 function getDayNumberB(janFirstDayNumber, yearDayNumber){
-    return(janFirstDayNumber+(yearDayNumber-1)%7);
+    return(janFirstDayNumber + (yearDayNumber - 1) % 7);
 }
 
 
@@ -74,7 +58,7 @@ function getDayBusisness(janFirstDayNumber, yearDayNumber, hourNumber){
     }  
 }
 
-console.log(getDayBusisness(0, 21, 12));
+
 
 // Challenge
 // Replace the yearDayNumber and hourNumber parameters with a Date() variable.
